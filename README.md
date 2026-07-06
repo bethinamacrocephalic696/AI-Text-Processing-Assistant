@@ -1,7 +1,30 @@
 <p align="center">
   <img src="images/banner.png" alt="AI Text Processing Assistant Banner" width="100%">
 </p>
-# 🤖 AI Text Processing Assistant
+
+<h1 align="center">🤖 AI Text Processing Assistant</h1>
+
+<p align="center">
+Production-Style AI Automation Project for Intelligent Text Analysis, Prompt Engineering, and Structured Data Processing
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-000000?style=for-the-badge)
+![LLM](https://img.shields.io/badge/AI-Large%20Language%20Model-4B8BBE?style=for-the-badge)
+![JSON](https://img.shields.io/badge/Structured-JSON-FF9800?style=for-the-badge)
+![Prompt Engineering](https://img.shields.io/badge/Prompt-Engineering-7B1FA2?style=for-the-badge)
+![Automation](https://img.shields.io/badge/Workflow-Automation-009688?style=for-the-badge)
+![Logging](https://img.shields.io/badge/Production-Logging-1565C0?style=for-the-badge)
+![Validation](https://img.shields.io/badge/Input-Validation-43A047?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/Open%20Source-GitHub-181717?style=for-the-badge&logo=github)
+
+</p>
+
+---
+
+## 📖 Overview
 
 A production-style AI Text Processing Assistant developed as part of the **AI Automation & Workflow Engineering** learning journey.
 
